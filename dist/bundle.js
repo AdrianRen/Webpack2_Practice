@@ -63,15 +63,27 @@
 /******/ 	__webpack_require__.p = "";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
 /***/ (function(module, exports) {
 
+module.exports = {
+  hi:'Oh Hi there!',
+  event: 'Uppsala JS'
+}
+
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+let messages = __webpack_require__(0);
+
 let app = document.getElementById("app");
-app.innerHTML = '<p> Hi There! </p>' ;
+app.innerHTML = '<p>' + messages.hi + ' ' + messages.event +'</p>' ;
 
 
 /***/ })

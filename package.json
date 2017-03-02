@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rimraf dist && webpack src/index.js dist/bundle.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/AdrianRen/webpack2_practice#readme",
   "devDependencies": {
+    "rimraf": "^2.6.1",
     "webpack": "^2.2.1"
   }
 }
