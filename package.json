@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rimraf dist && webpack src/index.js dist/bundle.js"
+    "build": "rimraf dist && webpack",
+    "dev":"node dev-server.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   "homepage": "https://github.com/AdrianRen/webpack2_practice#readme",
   "devDependencies": {
     "rimraf": "^2.6.1",
-    "webpack": "^2.2.1"
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
   }
 }
